@@ -41,6 +41,16 @@ $(document).ready(function () {
     autoplaySpeed: 4000
   });
   
+  $('.products_slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+  
   // tooltip
   $('.js-tooltip').mousemove(function (e) {
 	var tooltip = $(this).next('.tooltip');
@@ -97,6 +107,16 @@ $(document).ready(function () {
     });
   }
   number();
+  
+  // product slider with thumbs
+
+  $('.show_image').click(function (e) {
+    e.preventDefault();
+    var mainImage = $(this).index();
+    $('.show_image').removeClass('active');
+    $(this).addClass('active');
+    $('.main_image li').removeClass('active').eq(mainImage).addClass('active');
+  });
   
   
 })
