@@ -22,6 +22,16 @@ $(document).ready(function () {
     slidesToScroll: 4
   });
   
+  $('.hits_slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 2,
+    slidesToScroll: 2
+  });
+  
   // tooltip
   $('.js-tooltip').mousemove(function (e) {
 	var tooltip = $(this).next('.tooltip');

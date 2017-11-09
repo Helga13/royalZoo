@@ -36,7 +36,7 @@ a {
   color: inherit;
 }
 
-ul {
+ul, ol {
   li {
     list-style: none;
   }
@@ -70,7 +70,7 @@ label {
 p {
   @include font-size(1.8);
   @include line-height(2.2);
-  margin: 24px 0;
+  margin: 22px 0;
   opacity: .7;
 }
 
@@ -103,6 +103,7 @@ p {
   padding: 1.5px 17.5px;
   font-family: 'Neucha', $font-stack-helvetica;
   cursor: pointer;
+  text-shadow: 0px 1px 2px rgba(40, 18, 64, 0.3);
   transition: background-color .3s ease, box-shadow .3s ease;
   &:hover,
   &:focus,
@@ -167,6 +168,79 @@ p {
   text-align: center;
   line-height: 100px;
   z-index: 1;
+}
+
+.item_news ul:not(.slick-dots){
+  font-family: 'AlegreyaSansBold', $font-stack-helvetica;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 18px 0;
+  li{
+    font-family: 'AlegreyaSansRegular', $font-stack-helvetica;
+    line-height: 22px;
+    padding-left: 42px;
+    position: relative;
+    color: #828282;
+    margin: 8px 0 4px;
+    &:before{
+      content: '';
+      position: absolute;
+      background: url('../img/icons/list.png') center no-repeat;
+      width: 15px;
+      height: 15px;
+      left: 0;
+      top: 2px;
+    }
+  }
+}
+
+.item_news ol{
+  font-family: 'AlegreyaSansBold', $font-stack-helvetica;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 18px 0;
+  counter-reset: list 0;
+  li{
+    font-family: 'AlegreyaSansRegular', $font-stack-helvetica;
+    line-height: 22px;
+    padding-left: 42px;
+    position: relative;
+    color: #828282;
+    margin: 8px 0 4px;
+    &:before{
+      position: absolute;
+      counter-increment: list;
+      content: counter(list);
+      left: 0;
+      font-family: 'AlegreyaSansBold', $font-stack-helvetica;
+      color: $orange;
+    }
+  }
+}
+
+table{
+  font-size: 18px;
+  width: 100%;
+  border-spacing: 0;
+  padding: 24px 0;
+  td{
+    padding: 9px 0 9px 8px;
+    border-bottom: 1px solid #ebeaea;
+  }
+  thead th{
+    background-color: #ebeaea;
+    text-align: left;
+    font-family: 'AlegreyaSansBold', $font-stack-helvetica;
+    font-weight: normal;
+  }
+  th{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 11px 0 11px 7px;
+  }
+  tr{
+    border-bottom: 1px solid #ebeaea;
+  }
 }
 
 /* header */
@@ -596,6 +670,10 @@ p {
 }
 
 /* main */
+
+main{
+  padding-bottom: 30px;
+}
 
 .main_slider{
   height: 862px;
@@ -1314,5 +1392,99 @@ p {
         background-color: $orange;
       }
     } 
+  }
+}
+
+.hits_slider{
+  padding-top: 20px;
+  &.slick-dotted.slick-slider{
+    margin-bottom: 40px;
+  }
+  .row{
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .col{
+    padding: 5px;
+  }
+  .product_item{
+    padding: 15px 13px 24px;
+    border: 1px solid #cfcfcf;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .3s ease, box-shadow .3s ease;
+    &:hover,
+    &:focus,
+    &:active{
+      border-color: $orange;
+      box-shadow: 0 1px 10px 0 $orange;
+    }
+  }
+  .discount{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    right: 15px;
+    top: 15px;
+  }
+  .img_block{
+    margin-bottom: 16px;
+    img{
+      width: auto;
+      max-height: 143px;
+    }
+  }
+  .category{
+    font-size: 16px;
+    opacity: .7;
+    padding: 10px 0 20px;
+    font-family: 'AlegreyaSansBold', $font-stack-helvetica;
+  }
+  .btn{
+    font-size: 16px;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 5px;
+  }
+  .slick-dots{
+    bottom: -40px;
+    li button{
+      border-color: $orange;
+    }
+    li.slick-active button, 
+    li:active button, 
+    li:focus button,
+    li:hover button{
+      background-color: $orange;
+    }
+  }
+}
+
+.services_side{
+  text-align: center;
+  padding: 52px 0 10px;
+  .service_item{
+    padding-bottom: 28px;
+  }
+  .img_block{
+    margin-bottom: 0;
+    opacity: .7;
+  }
+  svg{
+    height: 102px;
+  }
+  .caption{
+    font-size: 29px;
+    font-family: 'Neucha', $font-stack-helvetica;
+    padding-bottom: 6px;
+  }
+  .text{
+    font-size: 18px;
+    opacity: .7;
+    padding: 0 7px;
   }
 }
