@@ -128,5 +128,31 @@ $(document).ready(function () {
     $('.main_image li').removeClass('active').eq(mainImage).addClass('active');
   });
   
+  // popup
+  
+  $('.js-popup').click(function (e) {
+        e.preventDefault();
+        var DataId = $(this).attr('data-id');
+        if (typeof DataId == "string") {
+        	$('#'+DataId).fadeIn(100);
+        	$('body').css('overflow', 'hidden');  
+        }
+    });
+    $('.popup').click(function (e) {
+        e = event || window.event
+        if (e.target == this) {
+            $(this).fadeOut(100);
+            $('body').css('overflow', 'auto'); 
+        }
+    });
+	$('.popup_close').click(function (e) {
+         e.preventDefault();
+           $(this).parents('.popup').fadeOut(100);
+           $('body').css('overflow', 'auto'); 
+    });
+    $('.popup_content').click(function(e) {
+		e.stopPropagation();
+	}); 
+  
   
 })

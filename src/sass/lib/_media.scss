@@ -1,21 +1,54 @@
-@media only screen and (max-width : 1600px) {
-
-}
-
-
-@media only screen and (max-width : 1366px) {
-
-}
-
-@media only screen and (max-width : 1279px) {
-
-}
-
-@media only screen and (max-width : 1023px) {
-
+@media only screen and (max-width : 1200px) {
+  
+  .left_nav {
+    li{
+      margin-right: 18px;
+    }
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .right_nav{
+    li {
+      margin-left: 17px;
+    }
+    a{
+      padding: 10px 0;
+    }
+  }
+  .categories_item .products{
+    font-size: 28px;
+  }
+  .footer_top .phones .tel{
+    font-size: 26px;
+  }
+  
 }
 
 @media only screen and (max-width : 992px) {
+  
+  .header_top{
+    display: none;
+  }
+  .logo_block .slogan{
+    display: none;
+  }
+  .burger_menu{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(40, 18, 64, 0.3);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+  }
+  .search_block{
+    display: none;
+    visibility: hidden;
+  }
 
 }
 

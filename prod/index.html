@@ -187,6 +187,9 @@
   </div>
   <div class="header_bottom">
     <div class="wrap">
+      <div class="burger_menu">
+        <img src="img/icons/burger_menu.png" alt="">
+      </div>
       <div class="logo_block">
         <a href="#" class="logo">
           <img src="img/logo_banner.png" alt="">
@@ -197,7 +200,7 @@
       <div class="search_block">
         <input type="search" name="search" placeholder="Поиск товара" value="" autocomplete="off">
         <button class="btn" type="button">Найти</button>
-        <p class="caption">Нет времени на поиск? <a href="#" class="link">Заказать звонок</a></p>
+        <p class="caption">Нет времени на поиск? <a href="#" class="link js-popup" data-id="callRequest">Заказать звонок</a></p>
       </div>
     </div>
   </div>
@@ -308,7 +311,7 @@
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-forBasket"></use>
-              </svg>Корзина (0)
+              </svg>Корзина <span>(0)</span>
             </a>
           </li>
         </ul>
@@ -563,23 +566,38 @@
     <div class="wrap">
       <div class="text">Бесплатная косультация</div>
       <div class="text">Звоните нам с 9:00 до 22:00</div>
-      <div class="phones">
-        <a href="tel:+375296172888">Velcom: <span class="tel">8 (029) 6-172-888</span></a>
-        <a href="tel:+375297689703">МТC: <span class="tel">8 (029) 768-97-03</span></a>
-      </div>
+      <div class="phones"> <a href="tel:+375296172888">Velcom: <span class="tel">8 (029) 6-172-888</span></a> <a href="tel:+375297689703">МТC: <span class="tel">8 (029) 768-97-03</span></a> </div>
     </div>
   </div>
   <div class="footer_bottom">
-    <div class="wrap">
-      <a href="http://skyweb.by" class="skyweb">Создание сайтов в Минске <span class="footer_link">skyweb.by</span></a>
-      <a href="#" class="footer_link">Закон о защите прав потребителей</a>
-      <a href="#" class="footer_link">Публичный договор</a>
-    </div>
+    <div class="wrap"> <a href="http://skyweb.by" class="skyweb">Создание сайтов в Минске <span class="footer_link">skyweb.by</span></a> <a href="#" class="footer_link">Закон о защите прав потребителей</a> <a href="#" class="footer_link">Публичный договор</a> </div>
   </div>
   <div class="copyright">
     <div class="wrap">&copy;1996–2017. Все права защищены</div>
   </div>
 </footer>
+<!--popup-->
+<div class="overlay popup" id="callRequest">
+  <div class="popup_content">
+    <a href="#" class="popup_close"><img src="img/icons/close.png" alt=""></a>
+    <form action="" method="post">
+      <div class="text_block">
+        <div class="subtitle">Впишите контактные данные</div>
+      </div>
+      <div class="field">
+        <label for="simple_name" class="simple_text">Ваше имя</label>
+        <input name="name" id="simple_name" type="text" autocomplete="off" required> 
+      </div>
+      <div class="field">
+        <label for="simple_email" class="simple_text">Телефон</label>
+        <input name="phone" id="simple_phone" type="text" placeholder="+375 (29) ___-__-__" autocomplete="off" required> 
+      </div>
+      <div class="btn_block">
+        <button value="Заказать звонок" type="submit" class="btn">Заказать звонок</button>
+      </div>
+    </form>
+  </div>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>

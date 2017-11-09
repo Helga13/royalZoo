@@ -11,6 +11,9 @@
   </div>
   <div class="header_bottom">
     <div class="wrap">
+      <div class="burger_menu">
+        <img src="img/icons/burger_menu.png" alt="">
+      </div>
       <div class="logo_block">
         <a href="#" class="logo">
           <img src="img/logo_banner.png" alt="">
@@ -21,7 +24,7 @@
       <div class="search_block">
         <input type="search" name="search" placeholder="Поиск товара" value="" autocomplete="off">
         <button class="btn" type="button">Найти</button>
-        <p class="caption">Нет времени на поиск? <a href="#" class="link">Заказать звонок</a></p>
+        <p class="caption">Нет времени на поиск? <a href="#" class="link js-popup" data-id="callRequest">Заказать звонок</a></p>
       </div>
     </div>
   </div>
@@ -132,7 +135,7 @@
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-forBasket"></use>
-              </svg>Корзина (0)
+              </svg>Корзина <span>(0)</span>
             </a>
           </li>
         </ul>

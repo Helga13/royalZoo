@@ -12,15 +12,37 @@
   */
 $arr_right-name: 'arr_right'
 $arr_right-x: 100px
-$arr_right-y: 15px
+$arr_right-y: 33px
 $arr_right-offset-x: -100px
-$arr_right-offset-y: -15px
+$arr_right-offset-y: -33px
 $arr_right-width: 10px
 $arr_right-height: 16px
-$arr_right-total-width: 115px
+$arr_right-total-width: 118px
 $arr_right-total-height: 101px
 $arr_right-image: 'sprite.png'
-$arr_right: 100px 15px -100px -15px 10px 16px 115px 101px 'sprite.png' 'arr_right'
+$arr_right: 100px 33px -100px -33px 10px 16px 118px 101px 'sprite.png' 'arr_right'
+$burger_menu-name: 'burger_menu'
+$burger_menu-x: 100px
+$burger_menu-y: 49px
+$burger_menu-offset-x: -100px
+$burger_menu-offset-y: -49px
+$burger_menu-width: 5px
+$burger_menu-height: 18px
+$burger_menu-total-width: 118px
+$burger_menu-total-height: 101px
+$burger_menu-image: 'sprite.png'
+$burger_menu: 100px 49px -100px -49px 5px 18px 118px 101px 'sprite.png' 'burger_menu'
+$close-name: 'close'
+$close-x: 100px
+$close-y: 0px
+$close-offset-x: -100px
+$close-offset-y: 0px
+$close-width: 18px
+$close-height: 18px
+$close-total-width: 118px
+$close-total-height: 101px
+$close-image: 'sprite.png'
+$close: 100px 0px -100px 0px 18px 18px 118px 101px 'sprite.png' 'close'
 $discount-name: 'discount'
 $discount-x: 0px
 $discount-y: 0px
@@ -28,26 +50,26 @@ $discount-offset-x: 0px
 $discount-offset-y: 0px
 $discount-width: 100px
 $discount-height: 101px
-$discount-total-width: 115px
+$discount-total-width: 118px
 $discount-total-height: 101px
 $discount-image: 'sprite.png'
-$discount: 0px 0px 0px 0px 100px 101px 115px 101px 'sprite.png' 'discount'
+$discount: 0px 0px 0px 0px 100px 101px 118px 101px 'sprite.png' 'discount'
 $list-name: 'list'
 $list-x: 100px
-$list-y: 0px
+$list-y: 18px
 $list-offset-x: -100px
-$list-offset-y: 0px
+$list-offset-y: -18px
 $list-width: 15px
 $list-height: 15px
-$list-total-width: 115px
+$list-total-width: 118px
 $list-total-height: 101px
 $list-image: 'sprite.png'
-$list: 100px 0px -100px 0px 15px 15px 115px 101px 'sprite.png' 'list'
-$spritesheet-width: 115px
+$list: 100px 18px -100px -18px 15px 15px 118px 101px 'sprite.png' 'list'
+$spritesheet-width: 118px
 $spritesheet-height: 101px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $arr_right $discount $list
-$spritesheet: 115px 101px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $arr_right $burger_menu $close $discount $list
+$spritesheet: 118px 101px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables
