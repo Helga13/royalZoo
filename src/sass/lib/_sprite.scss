@@ -12,48 +12,48 @@
   */
 $arr_right-name: 'arr_right'
 $arr_right-x: 100px
-$arr_right-y: 49px
+$arr_right-y: 68px
 $arr_right-offset-x: -100px
-$arr_right-offset-y: -49px
+$arr_right-offset-y: -68px
 $arr_right-width: 10px
 $arr_right-height: 16px
-$arr_right-total-width: 118px
-$arr_right-total-height: 101px
+$arr_right-total-width: 119px
+$arr_right-total-height: 119px
 $arr_right-image: 'sprite.png'
-$arr_right: 100px 49px -100px -49px 10px 16px 118px 101px 'sprite.png' 'arr_right'
+$arr_right: 100px 68px -100px -68px 10px 16px 119px 119px 'sprite.png' 'arr_right'
 $burger_menu-name: 'burger_menu'
-$burger_menu-x: 100px
-$burger_menu-y: 65px
-$burger_menu-offset-x: -100px
-$burger_menu-offset-y: -65px
+$burger_menu-x: 0px
+$burger_menu-y: 101px
+$burger_menu-offset-x: 0px
+$burger_menu-offset-y: -101px
 $burger_menu-width: 5px
 $burger_menu-height: 18px
-$burger_menu-total-width: 118px
-$burger_menu-total-height: 101px
+$burger_menu-total-width: 119px
+$burger_menu-total-height: 119px
 $burger_menu-image: 'sprite.png'
-$burger_menu: 100px 65px -100px -65px 5px 18px 118px 101px 'sprite.png' 'burger_menu'
+$burger_menu: 0px 101px 0px -101px 5px 18px 119px 119px 'sprite.png' 'burger_menu'
 $cart_mobile-name: 'cart_mobile'
 $cart_mobile-x: 100px
-$cart_mobile-y: 18px
+$cart_mobile-y: 37px
 $cart_mobile-offset-x: -100px
-$cart_mobile-offset-y: -18px
+$cart_mobile-offset-y: -37px
 $cart_mobile-width: 16px
 $cart_mobile-height: 16px
-$cart_mobile-total-width: 118px
-$cart_mobile-total-height: 101px
+$cart_mobile-total-width: 119px
+$cart_mobile-total-height: 119px
 $cart_mobile-image: 'sprite.png'
-$cart_mobile: 100px 18px -100px -18px 16px 16px 118px 101px 'sprite.png' 'cart_mobile'
+$cart_mobile: 100px 37px -100px -37px 16px 16px 119px 119px 'sprite.png' 'cart_mobile'
 $close-name: 'close'
 $close-x: 100px
-$close-y: 0px
+$close-y: 19px
 $close-offset-x: -100px
-$close-offset-y: 0px
+$close-offset-y: -19px
 $close-width: 18px
 $close-height: 18px
-$close-total-width: 118px
-$close-total-height: 101px
+$close-total-width: 119px
+$close-total-height: 119px
 $close-image: 'sprite.png'
-$close: 100px 0px -100px 0px 18px 18px 118px 101px 'sprite.png' 'close'
+$close: 100px 19px -100px -19px 18px 18px 119px 119px 'sprite.png' 'close'
 $discount-name: 'discount'
 $discount-x: 0px
 $discount-y: 0px
@@ -61,26 +61,37 @@ $discount-offset-x: 0px
 $discount-offset-y: 0px
 $discount-width: 100px
 $discount-height: 101px
-$discount-total-width: 118px
-$discount-total-height: 101px
+$discount-total-width: 119px
+$discount-total-height: 119px
 $discount-image: 'sprite.png'
-$discount: 0px 0px 0px 0px 100px 101px 118px 101px 'sprite.png' 'discount'
+$discount: 0px 0px 0px 0px 100px 101px 119px 119px 'sprite.png' 'discount'
+$icon_search-name: 'icon_search'
+$icon_search-x: 100px
+$icon_search-y: 0px
+$icon_search-offset-x: -100px
+$icon_search-offset-y: 0px
+$icon_search-width: 19px
+$icon_search-height: 19px
+$icon_search-total-width: 119px
+$icon_search-total-height: 119px
+$icon_search-image: 'sprite.png'
+$icon_search: 100px 0px -100px 0px 19px 19px 119px 119px 'sprite.png' 'icon_search'
 $list-name: 'list'
 $list-x: 100px
-$list-y: 34px
+$list-y: 53px
 $list-offset-x: -100px
-$list-offset-y: -34px
+$list-offset-y: -53px
 $list-width: 15px
 $list-height: 15px
-$list-total-width: 118px
-$list-total-height: 101px
+$list-total-width: 119px
+$list-total-height: 119px
 $list-image: 'sprite.png'
-$list: 100px 34px -100px -34px 15px 15px 118px 101px 'sprite.png' 'list'
-$spritesheet-width: 118px
-$spritesheet-height: 101px
+$list: 100px 53px -100px -53px 15px 15px 119px 119px 'sprite.png' 'list'
+$spritesheet-width: 119px
+$spritesheet-height: 119px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $arr_right $burger_menu $cart_mobile $close $discount $list
-$spritesheet: 118px 101px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $arr_right $burger_menu $cart_mobile $close $discount $icon_search $list
+$spritesheet: 119px 119px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

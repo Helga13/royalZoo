@@ -336,6 +336,14 @@ table{
   }
 }
 
+.media_card,
+.nav_close,
+.search_media,
+.nav_title{
+  display: none;
+  visibility: hidden;
+}
+
 .main_nav{
   background-color: $orange;
   color: #fff;
@@ -406,6 +414,7 @@ table{
       color: #333;
       font-size: 16px;
       padding-bottom: 14px;
+      padding-top: 0;
     }
     .link{
       color: $orange;
@@ -647,6 +656,13 @@ table{
 #s-kogtetochka{
   .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}
   .cls-2{fill:#fff;}
+}
+
+.orange #s-forDogs,
+.orange #s-forCats,
+.orange #s-forDiscount{
+  .cls-1{fill:none;stroke:#ff702a;stroke-miterlimit:10;stroke-width:2px;}
+  .cls-2{fill:#ff702a;}
 }
 
 #s-kormDogDark,
@@ -1201,6 +1217,11 @@ main{
     max-width: 200px;
     padding: 5px 5px 9px;
     margin-top: 13px;
+  }
+  .add_to_card__popup{
+    display: none;
+    visibility: hidden;
+    margin-top: 10px;
   }
   .product_item:hover,
   .product_item:active,

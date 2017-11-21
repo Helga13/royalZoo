@@ -187,6 +187,33 @@ $(document).ready(function () {
     }
   });
   
+    // popup menu
+  
+  $('.burger_menu').click(function(e) {
+    e.preventDefault();
+  if($('.burger_menu').hasClass('opened')){
+    $('.main_nav').removeClass('opened');
+//    $('.main_nav .wrap .left_nav').fadeOut(100);
+    $('body').css('overflow', 'auto').find('svg').removeClass('orange'); 
+    $('.burger_menu').removeClass('opened');
+  }else{
+    $(this).toggleClass('opened');
+    $('.main_nav').addClass('opened');
+//    $('.main_nav .wrap .left_nav').fadeIn(300);
+    $('body').css('overflow', 'hidden').find('svg').addClass('orange');   
+    }
+  }); 
+  	$('.nav_close, .main_nav .wrap').click(function (e) {
+      e.preventDefault();
+      $('.main_nav').removeClass('opened');
+//      $('.main_nav .wrap .left_nav').fadeOut(100);
+      $('body').css('overflow', 'auto').find('svg').removeClass('orange'); 
+      $('.burger_menu').removeClass('opened');
+    });
+    $('.main_nav nav').click(function (e) {
+      e.stopPropagation();
+    });
+  
   if($(window).width() < 481) {
     
     $('.brands_wrap').slick({
@@ -198,8 +225,16 @@ $(document).ready(function () {
       slidesToShow: 3,
       slidesToScroll: 3
     });
+    // slider on product page
+
+    $('.photo_frame .main_image').slick({
+      dots: true,
+      arrows: false
+    }); 
     
   }
+  
+  
   
   
 })
