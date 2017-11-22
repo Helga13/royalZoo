@@ -348,7 +348,9 @@ table{
   background-color: $orange;
   color: #fff;
 }
-
+nav{
+  @include clearfix;
+}
 .left_nav{
   display: inline-block;
   li{
